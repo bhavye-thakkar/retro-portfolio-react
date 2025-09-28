@@ -18,7 +18,7 @@ export default function Sidebar() {
       </div>
       <nav className="flex-1 flex flex-col gap-2">
         {items.map(({ href, label, icon: Icon }) => (
-          <Link key={href} href={href} className="group">
+          <Link key={href} href={href} prefetch className="group">
             <div className="flex items-center gap-3 px-3 py-2 rounded-md bg-[var(--sidebar-accent)] hover:bg-[var(--sidebar-primary)/10]">
               <Icon size={18} />
               <span className="font-bold">{label}</span>
@@ -30,3 +30,5 @@ export default function Sidebar() {
     </aside>
   );
 }
+
+

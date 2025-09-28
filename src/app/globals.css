@@ -120,15 +120,15 @@
 }
 
 @layer base {
-  * {
-    @apply border-[3px] border-border outline-ring/50; /* thick borders */
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-mono-custom);
-    letter-spacing: 0.2px;
-  }
-}
+   * {
+     @apply border-[3px] border-border outline-ring/50; /* thick borders */
+   }
+   body {
+     @apply bg-background text-foreground;
+     font-family: var(--font-mono-custom);
+     letter-spacing: 0.2px;
+   }
+ }
 
 /* Hide Next.js error overlay portal */
 nextjs-portal {
